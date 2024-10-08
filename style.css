@@ -47,4 +47,34 @@ h2{
 #text{
     font-family: var(--FontText);
     font-weight: 300;
+    font-size: 18px;
+
+    margin-bottom: 32px;
+}
+
+#cart{
+    background-color: rgb(128, 71, 33);
+
+    width: 100%;
+    height: 120px;
+
+    margin-bottom: 32px;
+}
+
+/* Second Page */
+
+#data{
+    margin: 24px;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#nameYearSecondPage{
+    margin-bottom: 24px;
+}
+
+#informations{
+    margin-bottom: 24px;
 }
