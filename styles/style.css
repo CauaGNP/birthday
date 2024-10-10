@@ -7,7 +7,7 @@
     --FontName: "Dancing Script";
     --Font: "DM Serif Display";
     --FontPresence: "Chewy";
-    --FontMensage: "Poppins";
+    --FontMensageAttencion: "Poppins";
 
     --ColorBackground: #000000;
     --ColorFont: #e1da3d;
@@ -24,17 +24,14 @@ body{
 }
 
 main{
-    background-color: #f4f4f4;
+    background-color: #cf8b8b;
 
-    width: 300px;
+    width: 90%;
     height: 500px;
 
     padding: 24px;
 
     text-align: center;
-    /* border: 30px solid;
-    border-radius: 24px;
-    border-image: url(images/image.png) 80 round; */
 
     position: absolute;
     top: 50%;
@@ -42,45 +39,20 @@ main{
     transform: translate(-50%,-50%);
 }
 
-#name{
-    font-family: var(--FontName);
+#attencion{
+    width: 80%;
+
+    margin: auto;
+
+    color: var(--ColorFont);
+    font-family: var(--FontMensageAttencion);
+    font-weight: 500;
+
+    border-top: 1px solid var(--ColorFont);
+    border-bottom: 1px solid var(--ColorFont);
 }
 
-h2{
-    font-family: var(--FontName);
-}
-
-#text{
-    font-family: var(--FontText);
-    font-weight: 300;
-    font-size: 18px;
-
-    margin-bottom: 32px;
-}
-
-#cart{
-    background-color: rgb(128, 71, 33);
-
-    width: 100%;
-    height: 120px;
-
-    margin-bottom: 32px;
-}
-
-/* Second Page */
-
-#data{
-    margin: 24px;
-
+#division{
     display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-
-#nameYearSecondPage{
-    margin-bottom: 24px;
-}
-
-#informations{
-    margin-bottom: 24px;
+    flex-direction: row;
 }
