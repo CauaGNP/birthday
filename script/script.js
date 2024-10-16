@@ -16,7 +16,7 @@ async function submitUsers(){
     const escortNum = Number(document.querySelector('#escortValue').value);
     if(nameUsers === ''){
         alert('Preencha o campo corretamente!!');
-        
+        nameUsers.focus()
     }
 
     try {
@@ -35,8 +35,8 @@ async function submitUsers(){
             alert(`erro no sistema ${result.status}`);
             throw new Error(`erro no sistema ${result.status}`);
         }
-        const data = await result.json()
-        console.log(data)
+        nameUsers.value = '';
+        nameUsers.focus();
     } catch (error) {
         console.error('Erro durante a requisição:', error);
     }
