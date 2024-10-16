@@ -63,6 +63,14 @@ img{
     margin-bottom: 16px;
 }
 
+a{
+    color: var(--ColorFont);
+}
+
+a:hover{
+    color: #b3ac2f;
+}
+
 p{
     font-family: 'Times New Roman';
     font-weight: bold;
@@ -180,8 +188,15 @@ button{
     }
 }
 
-@media screen and(min-width:1024){
+@media screen and (min-width:1024px){
     img{
         width: 40%;
+    }
+}
+
+@media screen and (min-width:1400px){
+    
+    img{
+        width: 20%;
     }
 }
