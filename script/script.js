@@ -12,8 +12,11 @@ function changeDiv(){
 };
 
 async function submitUsers(){
-    const nameUsers = document.querySelector('#nameInput').value.trim();
-    const escortNum = Number(document.querySelector('#escortValue').value);
+    const nameInput = document.querySelector('#nameInput');
+    const escortNum = Number(document.querySelector('#escortValue').value.trim());
+    const nameUsers = nameInput.value.trim(); 
+
+
     if(nameUsers === ''){
         alert('Preencha o campo corretamente!!');
         nameUsers.focus()
@@ -35,8 +38,8 @@ async function submitUsers(){
             alert(`erro no sistema ${result.status}`);
             throw new Error(`erro no sistema ${result.status}`);
         }
-        nameUsers.value = '';
-        nameUsers.focus();
+        nameInput.value = "";
+        nameInput.focus();
     } catch (error) {
         console.error('Erro durante a requisição:', error);
     }
