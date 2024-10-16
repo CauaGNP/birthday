@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script/script.js" defer></script>
 </head>
 <body>
     <main>
@@ -25,10 +26,20 @@
             </div>
        </div>
        <h1 id="textConfirmPresence">insira o seu nome e comfirme sua presença</h1>
-       <form>
+       <div class="form">
+            <label for="nameInput">Nome:</label>
            <input type="text" id="nameInput">
-           <button>Confirmar</button>
-       </form>
+           <div id="checkbox">    
+               <label for="escort">Pressione caso tenha acompanhante</label>
+               <input type="checkbox" name="" id="escortCheckBox">
+           </div>
+           <div id="escortInputs">
+            <label for="escortValue">Digite a quantidade de acompanhantes:</label>
+            <input type="number" name="" id="escortValue" value="0">
+           </div>
+           <button id="buttonSubmit">Confirmar</button>
+        </div>
     </main>
+
 </body>
 </html>

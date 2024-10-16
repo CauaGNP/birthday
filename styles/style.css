@@ -87,19 +87,44 @@ li{
     margin-bottom: 24px;
 }
 
-form{
+.form{
+    text-align: start;
+
+    width: 60%;
+
+    margin: auto;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 16px;
 }
 
 #nameInput{
-    width: 50%;
+    width: 80%;
     height: 28px;
 
     border: 0;
     border-radius: 8px;
+}
+
+#escortValue{
+    width: 80%;
+    height: 28px;
+
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Quantidade de acompanantes */
+
+#escortInputs{
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label{
+    font-size:  20px;
 }
 
 button{
@@ -110,6 +135,8 @@ button{
 
     width: 50%;
     height: 32px;
+
+    margin: auto;
 
     border-radius: 16px;
     border: 0;
