@@ -23,6 +23,10 @@ async function submitUsers(){
         nameUsers.focus()
     }
 
+    if(escortValue === ''){
+        escortNum.value = 0
+    }
+
     try {
         const result = await fetch("https://parseapi.back4app.com/classes/NameUsersBirthday",{
             method: "POST",
@@ -40,7 +44,7 @@ async function submitUsers(){
             throw new Error(`erro no sistema ${result.status}`);
         }
         nameInput.value = "";
-        escortNum.value = 0;
+        escortNum.value = "";
         nameInput.focus();
     } catch (error) {
         console.error('Erro durante a requisição:', error);
