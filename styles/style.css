@@ -50,9 +50,20 @@ main{
 }
 
 #division{
+    margin-bottom: 16px;
+
     display: flex;
     flex-direction: row;
 
+    gap: 16px;
+}
+
+
+#image2{
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
