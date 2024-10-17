@@ -60,6 +60,11 @@ main{
 
 
 #image2{
+    font-family: var(--fontH2);
+    font-size: 12px;
+
+    margin-top: 20px;
+
     align-items: center;
 
     display: flex;
