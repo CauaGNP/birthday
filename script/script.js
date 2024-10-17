@@ -43,7 +43,7 @@ async function submitUsers(){
             alert(`erro no sistema ${result.status}`);
             throw new Error(`erro no sistema ${result.status}`);
         }
-        alert("Registro registrado!!")
+        alert("Cadastro registrado!!")
         nameInput.value = "";
         escortNum.value = "";
         nameInput.focus();
