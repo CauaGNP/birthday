@@ -13,8 +13,9 @@ function changeDiv(){
 
 async function submitUsers(){
     const nameInput = document.querySelector('#nameInput');
-    const escortNum = Number(document.querySelector('#escortValue').value.trim());
     const nameUsers = nameInput.value.trim(); 
+    const escortNum = document.querySelector('#escortValue');
+    const escortValue = Number(escortNum.value)
 
 
     if(nameUsers === ''){
@@ -31,7 +32,7 @@ async function submitUsers(){
             "Content-Type": "application/json"},
             body: JSON.stringify({
                 name: nameUsers,
-                escort: escortNum
+                escort: escortValue
             })
         })
         if(!result.ok){
@@ -39,6 +40,7 @@ async function submitUsers(){
             throw new Error(`erro no sistema ${result.status}`);
         }
         nameInput.value = "";
+        escortNum.value = 0;
         nameInput.focus();
     } catch (error) {
         console.error('Erro durante a requisição:', error);
