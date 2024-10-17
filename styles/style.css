@@ -65,6 +65,10 @@ main{
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    & img{
+        width: 50%;
+    }
 }
 
 img{
@@ -143,7 +147,7 @@ li{
 }
 
 label{
-    font-size:  20px;
+    font-size: 16px;
 }
 
 button{
